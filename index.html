@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Momentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo-bonito">Nossos Momentos</h1>
+    </header>
+
+    <section id="adicionar-momento">
+        <div class="form-container">
+            <h2>Adicionar Novo Momento</h2>
+            <form id="form-momento">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required><br>
+
+                <label for="foto">Escolha uma Foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*" required><br>
+
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Breve descrição" required><br>
+
+                <button type="submit">Adicionar Momento</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <!-- Fotos adicionadas dinamicamente irão aparecer aqui -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
